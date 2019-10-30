@@ -6,7 +6,17 @@ public class Game {
 		FireBat f1 = new FireBat();
 		Medic m2 = new Medic();
 		SiegeTank siege = new SiegeTank();
+		Barrack barrack = new Barrack();
 		
+		Unit u = barrack.makeUnit(3);
+		System.out.println(u);
+		Building b = new Barrack();
+		b.landing();
+		
+		b = new Academy();
+		b.depart();
+		/*
+		//implements 사용 예제
 		Healable heal = m1;
 		//강제 형변환
 		
@@ -14,6 +24,7 @@ public class Game {
 		m2.heal(m1);
 		System.out.print("시즈탱크 ");
 		m2.heal(siege);
+		*/
 		
 		/*
 		//시즈모드 일때 예시
